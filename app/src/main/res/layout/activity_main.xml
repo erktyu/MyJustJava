@@ -54,6 +54,8 @@
             android:onClick="reset"
             android:padding="8dp"
             android:text="Resetle" />
+
+
     </LinearLayout>
 
     <LinearLayout
@@ -199,5 +201,8 @@
             android:padding="8dp"
             android:text="add" />
 
+
     </LinearLayout>
+
+
 </LinearLayout>

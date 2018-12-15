@@ -10,6 +10,7 @@ package com.example.android.justjava;
 
 
 
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -42,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     public void reset(View view) {
         abc=0;
         displayQuantity(abc);
-        String priceMessage="free";
+        String priceMessage ="deneme Bold";
         displayMessage(priceMessage);
     }
 
@@ -62,7 +63,13 @@ public class MainActivity extends AppCompatActivity {
     private void displayMessage(String message) {
         TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
         priceTextView.setText(message);
+        priceTextView.setTypeface(null, Typeface.BOLD);
+
+
     }
+
+
+
 
     //number_to_add
 
