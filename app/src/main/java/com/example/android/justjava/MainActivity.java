@@ -35,13 +35,13 @@ public class MainActivity extends AppCompatActivity {
      */
     public void submitOrder(View view) {
         abc++;
-        display(abc);
+        displayQuantity(abc);
     }
 
 
     public void reset(View view) {
         abc=0;
-        display(abc);
+        displayQuantity(abc);
         String priceMessage="free";
         displayMessage(priceMessage);
     }
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * This method displays the given quantity value on the screen.
      */
-    private void display(int number) {
+    private void displayQuantity(int number) {
         TextView quantityTextView = (TextView) findViewById(R.id.quantity_text_view);
         quantityTextView.setText("" + number);
     }
@@ -121,7 +121,7 @@ public class MainActivity extends AppCompatActivity {
         abc+=numberToAdd;
         numberToAdd=0;
         display2(numberToAdd);
-        display(abc);
+        displayQuantity(abc);
     }
 
 }
